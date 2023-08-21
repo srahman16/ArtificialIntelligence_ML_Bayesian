@@ -56,7 +56,7 @@ def compute_logistic_regression_for_class(class_name, gdf, raster_data, src):
 
 if __name__ == '__main__':
     gdf = gpd.read_file(r'X:\******\****.shp') #with multiple classes into one shapefile
-    with rasterio.open(r'D:\DL_LULC\Zixuan_Mombasa_GLM_testing\test_area.tif') as src:
+    with rasterio.open(r'X:\******\****.tif') as src:
         raster_data = src.read()
 
     classes_to_check = ['logistics', 'mangrove']  # add/exclude classes
